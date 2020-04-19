@@ -1,0 +1,11 @@
+const n = 3;
+
+// inputに入力データ全体が入る
+function Main(input) {
+    //文字列から10進数に変換するときはparseIntを使います
+    let a = parseInt(n, 10);
+    //出力
+    console.log('%d %s', a);
+}
+// Main(require("fs").readFileSync("/dev/stdin", "utf8"));
+Main();
