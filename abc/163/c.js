@@ -17,6 +17,14 @@ function Main() {
   let n = parseInt(tmp1[0], 10);
   let staff = tmp2.map(e => parseInt(e));
 
+  console.log(staff);
+
+  let dict = {};
+  for (let key of staff){
+    dict[key] = staff.filter(function(x){return x==key}).length;
+  }
+  console.log(dict);
+
   for (let i = 1; i <= n; i++){
     console.log(staff.filter(function(x){return x==i}).length);
   }
