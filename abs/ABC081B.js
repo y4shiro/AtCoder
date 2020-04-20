@@ -11,6 +11,7 @@ function Main(input){
 
   var count = 0;
 
+  // 2で割って奇数が出るまで操作とカウントを続ける
   while (true) {
     var odd_flag = false;
 
