@@ -7,9 +7,6 @@ function Main(input){
   var a = parseInt(input[0], 10);
   var b = parseInt(input[1], 10);
 
-  console.log(a);
-  console.log(b);
-
   if ((a*b) % 2 == 0){
     console.log("Even");
   } else {
