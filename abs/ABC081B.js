@@ -12,19 +12,14 @@ function Main(input){
   var count = 0;
 
   // 2で割って奇数が出るまで操作とカウントを続ける
+  outer:
   while (true) {
-    var odd_flag = false;
-
     for (var i = 0; i < n; i++){
       if(arr[i] % 2 != 0){
-        odd_flag = true;
+        break outer;
       }
 
       arr[i] /= 2;
-    }
-
-    if (odd_flag == true){
-      break;
     }
 
     count++;
